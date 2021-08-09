@@ -118,3 +118,18 @@ const dateParts2 = new Intl.DateTimeFormat("en", {
 console.log(
   `${dateParts2[2].value}-${dateParts2[0].value}-${dateParts2[4].value}`
 );
+
+console.log(
+  new Intl.DateTimeFormat("en", {
+    dateStyle: "full",
+  }).formatToParts(currentDate)
+);
+// [
+//   { type: 'weekday', value: 'Monday' },
+//   { type: 'literal', value: ', ' },
+//   { type: 'month', value: 'August' },
+//   { type: 'literal', value: ' ' },
+//   { type: 'day', value: '9' },
+//   { type: 'literal', value: ', ' },
+//   { type: 'year', value: '2021' }
+// ]

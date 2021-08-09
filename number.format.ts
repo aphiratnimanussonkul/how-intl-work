@@ -45,29 +45,17 @@ console.log(
 //Currentcy System
 
 console.log(
-  Intl.NumberFormat("en", {
-    currencyDisplay: "code",
-    currency: "USD",
-    style: "currency",
-  }).format(9999)
+  Intl.NumberFormat("en", { currencyDisplay: "code", currency: "USD", style: "currency" }).format(9999)
 );
 // USD 9,999.00
 
 console.log(
-  Intl.NumberFormat("en", {
-    currencyDisplay: "symbol",
-    currency: "USD",
-    style: "currency",
-  }).format(9999)
+  Intl.NumberFormat("en", { currencyDisplay: "symbol", currency: "USD", style: "currency" }).format(9999)
 );
 // $9,999.00
 
 console.log(
-  Intl.NumberFormat("en", {
-    currencyDisplay: "narrowSymbol",
-    currency: "USD",
-    style: "currency",
-  }).format(9999)
+  Intl.NumberFormat("en", { currencyDisplay: "narrowSymbol", currency: "USD", style: "currency" }).format(9999)
 );
 // $9,999.00
 
@@ -117,32 +105,24 @@ console.log(
 // 9,999.00 บาทไทย
 
 // Unit system
+
 console.log(
-  Intl.NumberFormat("en", { unit: "kilometer-per-hour", style: "unit" }).format(
-    120
-  )
+  Intl.NumberFormat("en", { unit: "kilometer-per-hour", style: "unit" }).format(120)
 );
 // 120 km/h
 
 console.log(
-  Intl.NumberFormat("en", {
-    unit: "liter",
-    style: "unit",
-    unitDisplay: "long",
-  }).format(120)
+  Intl.NumberFormat("en", { unit: "liter", style: "unit", unitDisplay: "long" }).format(120)
 );
 // 120 liters
 
 console.log(
-  Intl.NumberFormat("en", {
-    unit: "liter",
-    style: "unit",
-    unitDisplay: "narrow",
-  }).format(120)
+  Intl.NumberFormat("en", { unit: "liter", style: "unit", unitDisplay: "narrow" }).format(120)
 );
 // 120L
 
 // Percent
+
 console.log(Intl.NumberFormat("en", { style: "percent" }).format(1));
 // 100%
 
